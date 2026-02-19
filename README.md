@@ -40,6 +40,16 @@ Implication:
 - **M05** has the highest composite risk profile.
 - Example operational signal: under low availability conditions, one high-risk machine context showed **double-digit lift in delay probability**.
 
+Delay Rate by Machine (risk concentration):
+
+```mermaid
+xychart-beta
+    title "Delay Rate by Machine (%)"
+    x-axis ["M05","M02","M03","M01","M04"]
+    y-axis "Delay Rate %" 0 --> 55
+    bar [51.30,48.57,48.39,47.64,46.73]
+```
+
 Implication:
 - Asset-level interventions will outperform broad, one-size-fits-all process changes.
 

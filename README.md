@@ -97,16 +97,16 @@ Implication:
 - Efficiency mix is heavily weighted to **Low Efficiency (65.0%)**.
 - Conditions associated with low efficiency are now explicitly flagged for intervention planning.
 
-Efficiency Mix (horizontal stacked bar, share of jobs):
+Efficiency Mix (horizontal bar view, share of jobs):
 
-```text
-0%                                                          100%
-|-------------------------------|---------|--------|----------|
-| Low 65.0%                     | Mod 18.3% | High 16.1% | Opt 0.6% |
-|-------------------------------|---------|--------|----------|
-```
+| Category | Share | Visual (relative length) |
+|---|---:|---|
+| Low | 65.0% | `#################################-----------------` |
+| Moderate | 18.3% | `#########-----------------------------------------` |
+| High | 16.1% | `########------------------------------------------` |
+| Optimal | 0.6% | `--------------------------------------------------` |
 
-Counts: Low `650` | Moderate `183` | High `161` | Optimal `6`
+Counts: Low `650` | Moderate `183` | High `161` | Optimal `6` (total `1,000`)
 
 Implication:
 - There is substantial upside in throughput and cost performance from focused efficiency programs.

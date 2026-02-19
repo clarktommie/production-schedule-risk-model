@@ -3,17 +3,19 @@ Business-facing decision support for improving schedule reliability, throughput 
 
 ## What This Report Delivers
 This report identifies where production performance is most at risk, what conditions are driving delays and low efficiency, and which interventions should be prioritized first.
+Drivers were identified through structured feature analysis and predictive classification modeling.
 
 It is designed for plant leaders, operations managers, and production planners.
 
 ## Executive Highlights
 From the current production dataset (`1,000` jobs):
 
-- Nearly **1 in 2 jobs (48.5%)** shows operational delay signals.
+- Nearly **1 in 2 jobs (48.5%)** shows operational delay signal behavior (timing slip and/or delayed status).
+- **22.73%** are formally labeled `Delayed` (within Completed vs Delayed jobs).
 - **Machine M05** is the highest-risk asset for delay instability.
 - **Grinding and Milling** show the strongest instability patterns across schedule behavior.
 - Several machine-operation combinations exhibit elevated variability, increasing planning uncertainty.
-- **Low efficiency is common (65.0%)**, indicating significant productivity headroom.
+- Efficiency distribution is materially skewed toward the **Low** category (**65.0%**), indicating significant productivity headroom.
 
 ## Why This Matters to the Business
 Operational instability directly impacts:
@@ -28,8 +30,8 @@ This analysis moves from raw job logs to concrete decisions on where to interven
 
 ## Key Business Findings
 ### 1) Delay Exposure Is Material
-- Operational delay signal: **48.5%**.
-- Within delayed vs completed scope, baseline delay risk is **22.73%**.
+- Operational delay signal behavior: **48.5%** (jobs with timing slip and/or delayed status).
+- Formal labeled delay rate: **22.73%** (jobs explicitly marked `Delayed` within Completed vs Delayed scope).
 
 Implication:
 - Delays are not isolated events; they are a recurring operational pattern that requires targeted control points.
@@ -93,6 +95,16 @@ The analysis produced practical decision-support outputs that can be operational
 - High-variance process segment list
 - Low-efficiency condition flags
 - Plain-language insight statements for leadership updates
+
+## Data Source
+Hybrid Manufacturing Systems dataset sourced from Kaggle.
+Used for structured schedule, machine, and efficiency analysis.
+
+Kaggle dataset: [Hybrid Manufacturing Production Data – Ziya07](https://www.kaggle.com/datasets/ziya07/manufacturing-production-data/code)
+
+
+## Development Notes
+Analytical workflow and modeling supported by modern AI-assisted development tools.
 
 ## Bottom Line
 This initiative is not just a modeling exercise. It provides a targeted operating plan for reducing delay risk and improving efficiency where the business impact is highest.

@@ -76,6 +76,20 @@ Implication:
 - Machine x operation segments show large variation in delay behavior.
 - High-variance segments should be treated as operational watchlists.
 
+Machine x Operation Variability Heatmap (segment intensity):
+
+Legend: `HIGH` = highest variability tier, `MED` = moderate, `LOW` = lower.
+
+| Machine | Additive | Drilling | Grinding | Lathe | Milling |
+|---|---|---|---|---|---|
+| M01 | LOW | LOW | LOW | HIGH | MED |
+| M02 | MED | HIGH | HIGH | MED | LOW |
+| M03 | MED | LOW | HIGH | LOW | MED |
+| M04 | LOW | HIGH | HIGH | HIGH | HIGH |
+| M05 | MED | MED | MED | LOW | HIGH |
+
+Highest-variance hotspots include: `M05 x Milling`, `M03 x Grinding`, `M04 x Lathe`, and `M04 x Grinding`.
+
 Implication:
 - Segment-level governance (not just machine-level) is needed for reliable weekly planning.
 

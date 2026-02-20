@@ -35,13 +35,7 @@ This analysis moves from raw job logs to concrete decisions on where to interven
 
 Schedule Deviation Distribution (minutes, Actual End vs Scheduled End):
 
-```mermaid
-xychart-beta
-    title "Schedule Deviation Distribution"
-    x-axis ["-5 to 0","1 to 5","6 to 10","11 to 15","16 to 20","21 to 25","26 to 30"]
-    y-axis "Job Count" 0 --> 400
-    bar [386,287,10,48,39,49,52]
-```
+![Schedule Deviation Distribution](assets/schedule-deviation-distribution.png)
 
 Volatility signal: mean deviation is **4.47 min** with a long right tail (**P90 = 22 min**, **P95 = 26 min**), confirming material operational instability.
 
